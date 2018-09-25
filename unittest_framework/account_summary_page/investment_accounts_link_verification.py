@@ -21,8 +21,7 @@ class TestCase2(unittest.TestCase):
         self.assertEqual("Zero - Account Summary",self.driver.title)
 
     def test_method(self):
-        heading=self.driver.find_element_by_xpath("/html/body/div[1]/div[2]/div/div[2]/div/div/h2[1]").text
-        self.assertEquals("Cash Accounts",heading)
+        self.driver.find_element_by_xpath("//h2[contains(text(),'Cash Accounts')]")
         self.driver.find_element_by_xpath("//tr[1]/td/a[contains(text(),'Brokerage')]").click()
         self.assertEqual("Zero - Account Activity",self.driver.title)
         heading=self.driver.find_element_by_xpath("//*[@id='ui-tabs-1']/h2").text
@@ -32,11 +31,11 @@ class TestCase2(unittest.TestCase):
         self.assertEqual("Brokerage",selectedoption.text)
 
     def tearDown(self):
-        self.driver.quit()
+        pass
 
     @classmethod
     def tearDownClass(inst):
-        print("tearDownClass")
+        inst.driver.quit()
 
 if __name__ == '__main__':
     unittest.main()
