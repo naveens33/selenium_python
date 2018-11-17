@@ -1,0 +1,50 @@
+CSS
+
+xpath  //elementname[@attributename='value']
+
+a) when you want to choose throug any attribute
+element[attributename='value']
+input[type='text']
+
+b) when you have id to choose 
+element#id
+input#searchTerm
+
+c) when you have class to choose
+
+element.class
+input.search-query
+
+d)
+
+li.dropdown>a.dropdown-toggle>i
+
+e) instead of tr[2] you have to use --- tr:nth-child(2)
+
+tr#gridview-1015-bd-Deposits>td>table>tbody>tr:nth-child(2)>td.x-grid-cell.x-grid-cell-gridcolumn-1012.x-grid-cell-first
+
+
+f) * ^ $ operators = in xpath starts-with(^) ends-with($) and contains(*)
+
+1. //elementname[@attributename='value']
+
+Css Selector
+
+elementname[attributename='value']
+
+input[id='searchTerm']
+
+contains *
+starts-with ^
+ends-with $
+
+span[id*='download_webinspect'] 
+span[id^='download'] 
+span[id$='link'] 
+a[href$='password.html']
+
+SAvings
+//div[1]/div/table/tbody/tr[2]/td[1]/a
+
+div:nth-child(1)>div>table>tbody>tr:nth-child(2)>td:nth-child(1)>a
+
