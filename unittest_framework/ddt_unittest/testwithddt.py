@@ -1,9 +1,9 @@
 import unittest
-from ddt import ddt, data, idata, file_data, unpack
+from ddt import ddt, data
 
 @ddt
 class TestDDTData(unittest.TestCase):
 
     @data(56, 26, 56, 39, 17)
-    def testwithddtdata(self, x):
+    def test_withddtdata(self, x):
         self.assertGreater(x, 50)

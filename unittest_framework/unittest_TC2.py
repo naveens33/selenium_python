@@ -9,8 +9,8 @@ class TestCase2(unittest.TestCase):
     def setUp(self):
         print("setUP")
 
-    def test_method3(self):
-        print("test method3")
+    def test_method5(self):
+        print("test method5")
 
     def tearDown(self):
         print("tearDown")

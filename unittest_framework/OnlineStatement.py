@@ -28,6 +28,7 @@ class OnlineStatement(unittest.TestCase):
         element.click()
         links=self.driver.find_elements_by_xpath("//a[contains(text(),'11(')]")
         assert 2== links.__len__()
+        self.driver.save_screenshot("screenshot.png")
 
     def tearDown(self):
-        pass
+        self.driver.close()
