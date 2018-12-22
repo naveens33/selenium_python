@@ -35,8 +35,7 @@ class TestCase1(unittest.TestCase):
 
     @classmethod
     def tearDownClass(inst):
-        pass
-        #inst.driver.quit()
+        inst.driver.quit()
 
 if __name__ == '__main__':
     unittest.main()
