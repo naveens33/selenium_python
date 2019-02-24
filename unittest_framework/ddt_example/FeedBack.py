@@ -24,11 +24,9 @@ class OnlineStatement(unittest.TestCase):
         self.driver.find_element_by_name("submit").click()
         conf=self.driver.find_element_by_xpath("//div[@class='offset3 span6']").text
         self.assertTrue(name in conf)
+
         ts = time.time()
-        date=str(datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'));
-        date=date.replace("-","_")
-        date =date.replace(":","_")
-        date =date.replace(" ","_")
+        date=str(datetime.datetime.fromtimestamp(ts).strftime('%Y_%m_%d_%H_%M_%S'));
         self.driver.save_screenshot("D:\\screenshot_feedback"+date+".png")
 
     def tearDown(self):

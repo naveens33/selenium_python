@@ -24,6 +24,7 @@ class TestCase2(unittest.TestCase):
         self.driver.find_element_by_xpath("//h2[contains(text(),'Cash Accounts')]")
         self.driver.find_element_by_xpath("//tr[1]/td/a[contains(text(),'Brokerage')]").click()
         self.assertEqual("Zero - Account Activity",self.driver.title)
+
         heading=self.driver.find_element_by_xpath("//*[@id='ui-tabs-1']/h2").text
         self.assertEqual("Show Transactions",heading)
         select = Select(self.driver.find_element_by_name('accountId'))
