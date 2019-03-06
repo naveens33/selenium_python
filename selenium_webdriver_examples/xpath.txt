@@ -41,13 +41,22 @@ d) //elementname[contains(text(),'value')]
 
 //a[starts-with(text(),'My')]
 
+//a[text()="Savings"]
+
 e) //parent[]/child[]/child[]/child[]
 
 //a[@id='sp_get_payee_details']/i
 
+//This is on Login page
+(//div[@class='controls']/input)[3]
+
 f) and/or
 
-//element[@attribute1='value1' and @attribute2='value2']
+(i) //element[@attribute1='value1' and @attribute2='value2']
+
+(ii) //element[@attribute1='value1' and contains(@attribute2,'value2')]
+
+ //span[@class='headers' and contains(@id,'activity')]
 
 //span[@class='headers' and @id='account_activity_link']
 

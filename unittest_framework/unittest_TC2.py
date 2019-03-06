@@ -12,12 +12,15 @@ class TestCase2(unittest.TestCase):
     def test_method5(self):
         print("test method5")
 
+    def test_method6(self):
+        print("test method6")
+
     def tearDown(self):
         print("tearDown")
-
+'''
     @classmethod
     def tearDownClass(inst):
         print("tearDownClass")
-
+'''
 if __name__ == '__main__':
     unittest.main()

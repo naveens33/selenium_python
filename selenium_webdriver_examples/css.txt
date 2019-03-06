@@ -30,9 +30,17 @@ f) * ^ $ operators = in xpath starts-with(^) ends-with($) and contains(*)
 
 Css Selector
 
-elementname[attributename='value']
+a) elementname[attributename='value']
 
 input[id='searchTerm']
+
+b)[attribute='value']
+
+[id='user_email']
+
+c) elementname[attribute*='value']
+
+input[value*='Pass']
 
 contains *
 starts-with ^
@@ -45,6 +53,12 @@ a[href$='password.html']
 
 SAvings
 //div[1]/div/table/tbody/tr[2]/td[1]/a
+
+div[class='page-header']>h3
+
+//tr[2]/td/a[text()="Savings"]
+
+div:nth-child(2)>div>table>tbody>tr:nth-child(2)>td>a
 
 div:nth-child(1)>div>table>tbody>tr:nth-child(2)>td:nth-child(1)>a
 
