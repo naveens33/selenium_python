@@ -3,6 +3,7 @@ from selenium import webdriver
 
 class TestCase(unittest.TestCase):
     driver = webdriver.Chrome(r'D:\Naveen\Selenium\chromedriver_win32\chromedriver.exe')
+
     @classmethod
     def setUpClass(cls):
         cls.driver.maximize_window()
@@ -24,8 +25,11 @@ class TestCase(unittest.TestCase):
             self.driver.back()
 
     def tearDown(self):
-        #self.driver.quit()
         pass
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.quit()
 
 if __name__=='__main__':
     unittest.main()
