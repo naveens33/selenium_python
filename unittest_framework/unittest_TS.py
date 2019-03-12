@@ -1,5 +1,5 @@
 import unittest
-from unittest_TC1 import TestCase1
+from unittest_framework.unittest_TC1 import TestCase1
 from unittest_TC2 import TestCase2
 
 tc1 = unittest.TestLoader().loadTestsFromTestCase(TestCase1)
