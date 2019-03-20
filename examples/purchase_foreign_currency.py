@@ -50,6 +50,7 @@ try:
 
 except Exception as err:
     print("Error: "+str(err))
+
 finally:
     #driver.close()
     pass

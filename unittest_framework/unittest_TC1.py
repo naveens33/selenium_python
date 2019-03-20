@@ -23,7 +23,7 @@ class TestCase1(unittest.TestCase):
     def test_method3(self):
         print("test method3")
 
-    @unittest.skipIf(int(obj.strftime("%d"))<3,"Only after 5th you can execute this test")
+    @unittest.skipIf(int(obj.strftime("%d"))<15,"Only after 5th you can execute this test")
     def test_04(self):
         print("test04")
 
