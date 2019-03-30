@@ -1,10 +1,18 @@
 from selenium.webdriver.common.by import By
 
 class HomePageLocator:
-    signin_button=(By.ID,"signin_button")
-    search_textfield=(By.ID,"searchTerm")
+    signinbutton=(By.ID,"signin_button")
 
 class LoginPageLocator:
-    login_textfield=(By.XPATH,"//*[@id='user_login']")
-    password_textfield=(By.CSS_SELECTOR,"#user_password")
-    signin_button=(By.NAME,"submit")
+    logintextfield=(By.NAME,"user_login")
+    passwordfield=(By.CSS_SELECTOR,"#user_password")
+    signinbutton=(By.XPATH,"//*[@id='login_form']/div[2]/input")
+
+class AccountSummaryPageLocator:
+    paybillslink=(By.XPATH,"//a[text()='Pay Bills']")
+
+class PayBillsPageLocator:
+    addnewpayeelink=(By.XPATH,"//a[text()='Add New Payee']")
+
+    #Below locator are for AddNewPayee tab section
+    payeenametextfield=(By.ID,'np_new_payee_name')

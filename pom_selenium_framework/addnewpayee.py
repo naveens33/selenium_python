@@ -2,20 +2,28 @@ import unittest
 from pom_selenium_framework.pages.drivermanager import DriverManager
 from pom_selenium_framework.pages.homepage import HomePage
 from pom_selenium_framework.pages.loginpage import LoginPage
+from pom_selenium_framework.pages.accountsummarypage import AccountSummaryPage
+from pom_selenium_framework.pages.paybillspage import PayBillsPage
+
 
 class AddNewPayee(unittest.TestCase):
     def setUp(self):
-        obj=DriverManager("chrome","http://zero.webappsecurity.com/index.html")
-        home_page=HomePage(obj.driver)
-        home_page.click_signinbutton()
-        login_page=LoginPage(obj.driver)
-        assert "Zero - Log in" == login_page.getPageTitle()
-        login_page.setText_login("username")
-        login_page.setText_password("password")
-        login_page.click_siginbutton()
-
+        self.obj=DriverManager("http://zero.webappsecurity.com")
+        homepage=HomePage(self.obj.driver)
+        homepage.clickSignInButton()
+        loginpage=LoginPage(self.obj.driver)
+        assert "Zero - Log in"==loginpage.getTitle()
+        loginpage.setText_Login("username")
+        loginpage.setText_Password("password")
+        loginpage.clickSignInButton()
+        aspage=AccountSummaryPage(self.obj.driver)
+        assert  "Zero - Account Summary"==aspage.getTitle()
+        aspage.clickpaybillslink()
 
     def test(self):
-        pass
+        paybills=PayBillsPage(self.obj.driver)
+        paybills.clickaddnewpayeelink()
+        paybills.setTextPayeeName("Prem Kumar")
+
     def tearDown(self):
         pass
