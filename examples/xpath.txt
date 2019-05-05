@@ -50,6 +50,8 @@ e) //parent[]/child[]/child[]/child[]
 //This is on Login page
 (//div[@class='controls']/input)[3]
 
+(//a[text()='Savings'])[2]
+
 f) and/or
 
 (i) //element[@attribute1='value1' and @attribute2='value2']
@@ -64,8 +66,60 @@ f) and/or
 
 //span[@class='headers' and contains(@id,'account')]
 
+//a[text()='Savings' and contains(@href,'accountId=3')]
 
 <span class="header_icon_2335486_h2header">sometext</span>
 //span[starts-with(@class,'header_icon' and ends-with(@class,'h2header')]
 
 
+/*************************************************************/
+
+Xpath
+-----
+
+Absolute
+
+/html/body/div/div/div/div/div/div/h3
+
+/html/body/div[1]/div[2]/div/div/div/div/h3
+
+Relative
+
+a)//elementname[@attribute='value']
+
+//input[@id='user_email']
+
+//input[@name='email']
+
+b)//*[@attribute='value']
+
+//*[@id='user_email']
+
+c)//elementname[contains(@attribute,value)]
+
+//input[contains(@id,'user_email')]
+
+contains()
+starts-with()
+------------
+ends-with()
+------------
+
+d)//elementname[text()='displaytext']
+or
+//elementname[contains(text(),'displaytext')]
+
+//h3[contains(text(),'Password')]
+//h3[text()='Forgotten Password']
+
+text()
+
+e)//parent[]//child[]
+
+//div[@class='page-header']/h3
+
+(//a[text()='Savings'])[2]
+
+f)and or
+
+//a[text()='Savings' and contains(@href,'accountId=3')]
