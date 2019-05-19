@@ -2,7 +2,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from ddt import ddt,data, unpack
-from unittest_framework.sample.readexceldata_search import getData
+from unittest_framework.datadriventest.datadriven_excel_and_csv.datadriven_excel.readexceldata_search import getData
 @ddt
 class SearchScenario(unittest.TestCase):
     driver = webdriver.Chrome(executable_path=r'D:/Naveen/Selenium/chromedriver_win32/chromedriver.exe')
