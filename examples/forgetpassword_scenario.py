@@ -8,3 +8,4 @@ assert "Zero - Log in"==driver.title
 driver.find_element_by_xpath("/html/body/div[1]/div[2]/div/div/div/a").click()
 driver.find_element_by_xpath("//*[@id='user_email']").send_keys("abc@gmail.com")
 driver.find_element_by_xpath("//*[@id='send_password_form']/div[2]/input").click()
+
