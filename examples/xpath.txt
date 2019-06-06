@@ -122,4 +122,4 @@ e)//parent[]//child[]
 
 f)and or
 
-//a[text()='Savings' and contains(@href,'accountId=3')]
+///a[text()='Savings' and contains(@href,'accountId=3')]
