@@ -42,9 +42,9 @@ c) elementname[attribute*='value']
 
 input[value*='Pass']
 
-contains *
-starts-with ^
-ends-with $
+contains -*
+starts-with -^
+ends-with -$
 
 span[id*='download_webinspect'] 
 span[id^='download'] 
