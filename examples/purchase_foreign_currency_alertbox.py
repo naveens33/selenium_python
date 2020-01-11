@@ -3,9 +3,9 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-driver = webdriver.Chrome(executable_path=r'D:/Naveen/Selenium/chromedriver_win32/chromedriver.exe')
+import time
 try:
+    driver = webdriver.Chrome(executable_path=r'D:/Naveen/Selenium/chromedriver_win32/chromedriver.exe')
     driver.maximize_window()
     driver.get("http://zero.webappsecurity.com/index.html")
     signin=driver.find_element_by_id("signin_button")
@@ -29,10 +29,14 @@ try:
 
     alert_box=driver.switch_to.alert
     assert "Please, ensure that you have filled all the required fields with valid values." in alert_box.text
+    time.sleep(2)
+    import PIL.ImageGrab
+    im = PIL.ImageGrab.grab()
+    im.save("screenshot.jpg", "JPEG")
     alert_box.accept()
 
-except(Exception):
-    print(Exception.with_traceback())
+except Exception as err:
+    print(err)
 
 finally:
     #driver.close()

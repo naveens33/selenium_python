@@ -6,9 +6,11 @@ from selenium.webdriver.support import expected_conditions as EC
 #import time
 driver = webdriver.Chrome(r'D:/Naveen/Selenium/chromedriver_win32/chromedriver.exe')
 try:
+
     driver.maximize_window()
     driver.get("http://zero.webappsecurity.com/index.html")
     signin = driver.find_element_by_id("signin_button")
+
     signin.click()
     username = driver.find_element_by_id("user_login")
     username.send_keys("username")
