@@ -4,8 +4,8 @@ from ddt import ddt, data, unpack
 @ddt
 class TestDDTUnpack(unittest.TestCase):
 
-    @data(('Sachin', 4), ('Dhoni', 8))
+    @data(('uname1', 'pword1'), ('uname2', 'pword2'))
     @unpack
-    def testddtunpack(self, name, rank):
-        print("Student Name: "+name)
-        print("Rank: " + str(rank))
+    def testddtunpack(self, uname, pword):
+        print("User Name: "+uname)
+        print("Password: " + pword)

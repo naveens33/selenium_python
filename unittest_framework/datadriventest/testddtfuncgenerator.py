@@ -2,13 +2,13 @@ import unittest
 from ddt import ddt, idata
 
 
-def firstname():
-    for x in ["dhoni", "sachin", "kholi", "raina", "ashwin"]:
+def data_generator():
+    for x in [56, 26, 56, 39, 17]:
         yield x
 
 @ddt
 class TestDDTFuncGenerator(unittest.TestCase):
 
-    @idata(firstname())
+    @idata(data_generator())
     def testddtfuncgenerator(self, x):
-        print(x)
+        self.assertGreater(x, 50)

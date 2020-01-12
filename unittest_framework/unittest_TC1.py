@@ -1,9 +1,11 @@
 import unittest
 import sys
 from datetime import datetime
+from pom_framework1.base.basetest import BaseTest
 
 def setUpModule():
     print("setUpModule")
+
 
 def tearDownModule():
     print("tearDownModule")
@@ -18,10 +20,12 @@ class TestCase1(unittest.TestCase):
         print("setUP")
 
     def test_method1(self):
+        raise(ArithmeticError)
         print("test method1")
 
     @unittest.skip("Skip Test")
     def test_method2(self):
+
         print("test method2")
 
     @unittest.skipUnless(datetime.now().day>=13,"Not yet delivered")

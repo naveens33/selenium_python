@@ -15,7 +15,7 @@ class TestClass(unittest.TestCase):
 
     @data(*getData())
     @unpack
-    def test(self,uname,pword):
+    def test_login_with_invalid_credential(self,uname,pword):
         self.driver.find_element_by_id("user_login").send_keys(uname)
         self.driver.find_element_by_id("user_password").send_keys(pword)
         self.driver.find_element_by_name("submit").click()

@@ -1,0 +1,18 @@
+{
+    "vaild_credentail_1": {
+        "username": "uname1",
+        "password": "pword1"
+    },
+    "vaild_credentail_2": {
+        "username": "uname2",
+        "password": "pword2"
+    },
+    "invaild_credentail_1": {
+        "username": "uname3",
+        "password": "pword3"
+    },
+    "invaild_credentail_1": {
+        "username": "uname4",
+        "password": "pword4"
+    }
+}

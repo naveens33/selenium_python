@@ -6,6 +6,7 @@ Types:
 1. Absolute
 /html/body/div/div/div/div/div/div/h2
 /html/body/div[1]/p/div[2]/div/div[2]/div/div/h2[1]
+
 2. Relative
 
 a) //elementname[@attributename='value']
@@ -13,7 +14,6 @@ a) //elementname[@attributename='value']
 //input[@id='searchTerm']
 //input[@type='text']
 //select[@id='tf_fromAccountId']
-
 
 b) //*[@attributename='value']
 
