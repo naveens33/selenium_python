@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<testsuite errors="1" failures="0" name="MyTestExample-20190826230211" tests="2" time="0.000">
+	<testcase classname="MyTestExample" name="test_function_two" time="0.000"/>
+	<testcase classname="MyTestExample" name="test_function_one" time="0.000">
+		<error message="1 != 2 : test_function_one." type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "C:/Users/naveen.s/PycharmProjects/python-selenium_tutorial/unittest_framework/htmltestrunnerexamples/xmlrunnerreportexample.py", line 25, in test_function_one
+    self.assertEqual(1, 2, "test_function_one.")
+AssertionError: 1 != 2 : test_function_one.
+]]>		</error>
+	</testcase>
+	<system-out>
+<![CDATA[setUpClass execute. 
+setUp method execute. 
+test_function_one execute.
+tearDown method execute. 
+setUp method execute. 
+test_function_two execute.
+tearDown method execute. 
+tearDownClass execute. 
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

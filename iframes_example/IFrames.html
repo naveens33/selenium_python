@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>IFRAMES SWITCHING EXAMPLES</title>
+</head>
+<body>
+<div class="jumbotron">
+<h1>Displaying two web pages through IFrame</h1>
+</div>
+<button type="button" id='mybutton' class="btn btn-info" onclick="alertFunction()" name ="alert" style="margin-left: 45%;" >Click Here To Come Back</button>
+<br/>
+<br/>
+<br/>
+<div class="row">
+    <div class="col-6">
+        <iframe name="frame1" id="FR1" src="http://zero.webappsecurity.com/" height="500" width="100%"> </iframe>
+    </div>
+    <div class="col-6">
+        <iframe name="frame2" id="FR2" height="500" width="100%" src="https://naveens33.github.io/ctreport-selenium/"> </iframe>
+    </div>
+</div>
+<script>
+function alertFunction() {
+alert("Successfully Came Back to parent html");
+}
+</script>
+</body>
+</html>

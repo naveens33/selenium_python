@@ -1,0 +1,52 @@
+Invalid port. Exiting...
+1584716571248	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\naveen.s\\AppData\\Local\\Temp\\rust_mozprofileA93867"
+1584716571789	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1584716571913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1584716571913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1584716571915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1584716571915	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1584716574180	Marionette	INFO	Listening on port 15685
+1584716574495	Marionette	WARN	TLS certificate errors will be ignored for this session
+1584716748056	Marionette	INFO	Stopped listening on port 15685
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[2020-03-20T15:05:51Z ERROR bitsdownload::bits_interface::monitor] Unable to dispatch to thread: NS_ERROR_ILLEGAL_DURING_SHUTDOWN
+1586499134915	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\naveen.s\\AppData\\Local\\Temp\\rust_mozprofileabOi4G"
+1586499136150	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1586499136795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1586499136795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1586499136795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1586499136795	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1586499139809	Marionette	INFO	Listening on port 1674
+1586499139880	Marionette	WARN	TLS certificate errors will be ignored for this session
+1586499168862	Marionette	INFO	Stopped listening on port 1674
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1599819255491	geckodriver	INFO	Listening on 127.0.0.1:21804
+1599819258158	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\naveen.s\\AppData\\Local\\Temp\\rust_mozprofileAV8yqZ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1599819262591	Marionette	INFO	Listening on port 21814
+1599819263091	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599819274539	Marionette	INFO	Stopped listening on port 21814
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599820121334	geckodriver	INFO	Listening on 127.0.0.1:22934
+1599820124294	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\naveen.s\\AppData\\Local\\Temp\\rust_mozprofile3PnXTD"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1599820127587	Marionette	INFO	Listening on port 22945
+1599820127622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599820134379	Marionette	INFO	Stopped listening on port 22945
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

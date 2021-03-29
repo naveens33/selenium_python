@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Confirmation Alert</title>
+</head>
+<body>
+<div class="jumbotron">
+<h1>Confirm Your Entry to Zero Bank</h1>
+</div>
+<button type="button" class="btn btn-info" onclick="alertFunction()" name ="alert" style="margin-left: 45%;" >Click Here</button>
+    <br/>
+    <br/>
+<span id ="msg" style="margin-left: 30%;" >
+</span>
+<script>
+function alertFunction() {
+ var txt;
+ if (confirm("Do you want to continue.")) {
+
+ window.location.href = "http://zero.webappsecurity.com/";
+
+} else {
+document.getElementsByTagName("span")[0].setAttribute("class", "display-4 badge-danger");
+txt = "You pressed CANCEL!"
+ document.getElementById("msg").innerHTML = txt;
+ }
+}
+</script>
+</body>
+</html>

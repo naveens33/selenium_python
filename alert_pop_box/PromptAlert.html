@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Prompt Alert</title>
+</head>
+<body bgcolor="#E6E6FA">
+<div class="jumbotron">
+<h1>Confirm Your Age to go to Zero Bank</h1>
+</div>
+<button type="button" class="btn btn-info" onclick="alertFunction()" name ="alert" style="margin-left: 45%;" >Click Here</button>
+    <br/>
+    <br/>
+<span id ="msg" style="margin-left: 35%;" >
+</span>
+
+<script>
+function alertFunction() {
+ var login = prompt("Please enter your age", "18");
+
+ if (login >= 18) {
+window.location.href = "http://zero.webappsecurity.com/";
+}
+else{
+document.getElementsByTagName("span")[0].setAttribute("class", "display-4 badge-danger");
+txt = "You cannot enter !"
+ document.getElementById("msg").innerHTML = txt;
+}
+}
+</script>
+</body>
+</html>

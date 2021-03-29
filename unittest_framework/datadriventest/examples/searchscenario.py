@@ -6,6 +6,7 @@ from ddt import ddt, data, unpack
 @ddt
 class SearchScenario(unittest.TestCase):
     driver = webdriver.Chrome(r'D:\Naveen\Selenium\chromedriver_win32\chromedriver.exe')
+
     @classmethod
     def setUpClass(self):
         self.driver.maximize_window()
