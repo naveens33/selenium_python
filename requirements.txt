@@ -9,7 +9,7 @@ pluggy==0.12.0
 pyparsing==2.4.2
 pyscreenshot==0.6
 pytesseract==0.2.7
-requests==2.24.0
+requests==2.31.0
 selenium==3.14.1
 webdriver-manager==3.2.2
 xlrd==1.2.0
